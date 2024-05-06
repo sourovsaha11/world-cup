@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    grid-template-columns: repeat(2,6fr);
+    border-radius: 50px;
+    margin : 5rem;
+    padding: 3rem;
+    
+}
+
+.detailes-part{
+    justify-content: center;
+    align-items: center;
+}
+.detailes-part>p{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.detailes-part>button{
+    background-color: red;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: .5rem;
+}
+
+.banner-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-section{
+    display: flex;
+    gap: 1rem;
+}
+.aside-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: repeat(1, 1fr);
+    margin-right: 3rem;
+    margin-left: 5rem;
+    background-color: black;
+    height: 25rem;
+    width: 20rem;
+    border-radius: 2rem;
+
+} 
+.aside-button3{
+    height: 5rem;
+    width: 10rem;
+    background-color:white;
+    border-radius: 2rem;
+    
+    
+
+}
+.aside-button2{
+    height: 5rem;
+    width: 10rem;
+    background-color:white;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+.aside-button1{
+    height: 5rem;
+    width: 10rem;
+    background-color:white;
+    border-radius: 2rem;
+    background-color: red;
+    margin-bottom: 1rem;
+
+
+}
+
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(3,4fr);
+    margin-right: 5rem;
+}
+
+.card{
+    border: 1px solid gray;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+
+}
+
+.img-div{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content:space-between;
+    padding: 1rem;
+}
+.img-div>h4{
+    display: flex;
+    align-items: center;
+}
+
+.detailes{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card-button{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.date{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    margin-top: 5rem;
+    margin: 5rem 5rem 0rem 5rem;
+}
+
+.footer-container{
+    background-color: black;
+    color: white;
+    height: 30rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr-tag{
+    border: 1px solid gray;
+    width: 75%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+
+}
+.list-div{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.footer-link{
+    margin-top: 5rem;
+    
+}
+
+.link1{
+    margin-right: 1rem;
+}
+.link2{
+    margin-right: 1rem;
+}
+.link3{
+    margin-right: 1rem;
+}
+.link4{
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 576px){
+    .banner{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin-left: 0rem;
+    }
+
+    .wrap-section{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0rem;
+    }
+    .card-section{
+        display: grid;
+        grid-template-columns: repeat(1,100vw);
+        gap: 0rem;
+    }
+
+    .footer-container{
+        height: 50rem;
+        margin: 0rem;
+    }
+   .hr-tag{
+    width: 50%;
+   }
+   .list-div{
+    display: flex;
+    flex-direction: column;
+   }
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 577px){
+    .wrap-section{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0rem;
+    }
+
+    .card-section{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+
+    }
+
+    .card-section{
+        display: grid;
+        grid-template-columns: repeat(2,100vw);
+        gap: 0rem;
+    }
+
+}
